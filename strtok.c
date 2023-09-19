@@ -10,7 +10,7 @@
 
 char *_strtok(char *line, char *delim)
 {
-	static char *str = NULL;
+	static char *str;
 	char *copystr;
 
 	if (line != NULL)
