@@ -49,13 +49,7 @@ int main(int argc, char *argv[])
 			if (_strcmp(input, "exit") == 0)
 				break;
 			else if (_strncmp(input, "exit ", 5) == 0)
-			{
-				char *status_str = input + 5;
-				int status_code = _atoi(status_str);
-
-				if (status_code != 0 || _strcmp(status_str, "0") == 0)
-					exit(status_code);
-			}
+				exit_status(input);
 
 			handleCommand(input);
 		}

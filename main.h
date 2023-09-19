@@ -25,6 +25,7 @@ void executeCommand(const char *full_path, char *args[]);
 void handleCommand(char *input);
 char **capture_original_environment(void);
 void free_original_environment(char **original_environ);
+void exit_status(char *input);
 
 /**String Prototypes**/
 char *_strncpy(char *dest, char *src, int n);
@@ -37,5 +38,9 @@ char *_strchr(const char *s, char c);
 int _atoi(char *s);
 int _strncmp(const char *s1, const char *s2, size_t n);
 char *_strtok(char *line, char *delim);
+
+/**Set Prototypes**/
+int _setenv(const char *name, const char *value, int overwrite);
+int _unsetenv(const char *name);
 
 #endif
