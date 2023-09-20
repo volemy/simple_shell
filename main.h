@@ -26,6 +26,7 @@ void handleCommand(char *input);
 char **capture_original_environment(void);
 void free_original_environment(char **original_environ);
 void exit_status(char *input);
+void exit_shell(void);
 
 /**String Prototypes**/
 char *_strncpy(char *dest, char *src, int n);
